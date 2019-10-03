@@ -1,17 +1,22 @@
 ## Test_travisci [![Build Status](https://travis-ci.org/toya42/test_travisci.svg?branch=master)](https://travis-ci.org/toya42/test_travisci)
 
-Governing equation 
-   Two-dimensional vorticity equation
-Boundary condition
-   doubly-eriodic
+* Governing equation
 
-Spacial discretization 
-   Fourier-Galerkin
-Time discretization
+​    Two-dimensional vorticity equation
 
-​    nonlinear term: Traditional 4 stage 4th order Runge-Kutta method
+* Boundary condition
 
-​    linear term: Integrating factor technique
+  doubly-eriodic
+
+* Spacial discretization 
+
+  Fourier-Galerkin
+
+* Time discretization
+
+  nonlinear term: Traditional 4 stage 4th order Runge-Kutta method
+
+  linear term: Integrating factor technique
 
 ## Dependeicy
 
