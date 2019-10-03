@@ -15,8 +15,6 @@ install:
    - ./configure >log2
    - make >log3
    - sudo make install >log4
-#   - sudo mv cmake-3.15.3/ /opt
-#   - sudo ln -s /opt/cmake-3.15.3/bin/* /usr/bin/
    - PATH=${DEPS_DIR}/cmake_install:${DEPS_DIR}/cmake_install/bin:$PATH
    - cd ${TRAVIS_BUILD_DIR}
 
@@ -34,4 +32,4 @@ script:
    - cmake -D CMAKE_Fortran_COMPILER=gfortran -D CMAKE_BUILD_TYPE=debug ../
    - make
    - mkdir output
-   - ./linearadvection_fdm.exe
+   - ./2dvorticity_psm.exe
