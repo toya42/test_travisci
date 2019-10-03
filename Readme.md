@@ -20,9 +20,11 @@
 
 ## Dependeicy
 
-   Fortran2008
-   Intel MKL
-   cmake(3.14.5 or later)
+Fortran2008
+
+Intel MKL
+
+cmake(3.14.5 or later)
 
 ## License
 
