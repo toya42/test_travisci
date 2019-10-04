@@ -27,9 +27,11 @@ before_script:
    - source /opt/intel/mkl/bin/mklvars.sh intel64 lp64
 
 script:
-   - mkdir build
-   - cd build
-   - cmake -D CMAKE_Fortran_COMPILER=gfortran -D CMAKE_BUILD_TYPE=debug ../
-   - make
-   - mkdir output
-   - ./2dvorticity_psm.exe
+#   - mkdir build
+#   - cd build
+#   - cmake -D CMAKE_Fortran_COMPILER=gfortran -D CMAKE_BUILD_TYPE=debug ../
+#   - make
+#   - mkdir output
+#   - ./2dvorticity_psm.exe
+    - bash compile.sh
+    - bash execute.sh
