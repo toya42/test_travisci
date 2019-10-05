@@ -53,9 +53,9 @@ https://software.intel.com/en-us/parallel-studio-xe/choose-download#open-source-
 * Install
 
 ```bash
-$install_dir="${/install/directory/for/cmake/}"	
-$mkdir ${install_dir} 
-$cd ${install_dir}
+#install_dir=/install/directory/for/cmake/
+$mkdir $install_dir 
+$cd $install_dir
 $wget https://github.com/Kitware/CMake/releases/download/v3.15.3/cmake-3.15.3.tar.gz  
 $tar -xzvf cmake-3.15.3.tar.gz
 $mv cmake-3.15.3 cmake_install
@@ -63,7 +63,7 @@ $cd cmake_install
 $./configure 
 $make
 $sudo make install
-$PATH=${install_dir}/cmake_install:${install_dir}/cmake_install/bin:$PATH
+$PATH=$install_dir/cmake_install:$install_dir/cmake_install/bin:$PATH
 ```
 
 
