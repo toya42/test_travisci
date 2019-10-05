@@ -63,7 +63,12 @@ $cd cmake_install
 $./configure 
 $make
 $sudo make install
-$PATH=$install_dir/cmake_install:$install_dir/cmake_install/bin:$PATH
+```
+
+Install is completed, add to your "~/.bashrc" file, the following line:
+
+```bash:~/.bashrc
+PATH=$install_dir/cmake_install:$install_dir/cmake_install/bin:$PATH
 ```
 
 
@@ -84,7 +89,7 @@ $sudo apt-get update
 $sudo apt-get install intel-mkl-2019.4-070 --allow-unauthenticated
 ```
 
-Install is completed, add to your ".bashrc" file, the following line:
+Install is completed, add to your "~/.bashrc" file, the following line:
 
 ```bash:~/.bashrc
 source /opt/intel/mkl/bin/mklvars.sh intel64 lp64
