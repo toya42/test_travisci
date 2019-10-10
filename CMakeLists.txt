@@ -48,7 +48,6 @@ if(CMAKE_Fortran_COMPILER_ID MATCHES GNU)
       PRIVATE
 # Intel Link Advisor
 # https://software.intel.com/en-us/articles/intel-mkl-link-line-advisor
-#     mkl_rt
 #      mkl_gf_lp64
 #      mkl_gnu_thread
 #      mkl_core
