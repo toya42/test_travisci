@@ -9,16 +9,6 @@
 !     time integration : Runge-Kutta 4 (nonlinear term) 
 !                        integrating factor (linear term)
 !===========================================================
-!                                2019.08.13 : ver.1
-!                                2019.08.14 : ver.2
-!                                2019.08.17 : ver.3
-!                                2019.08.18 : ver.4
-!                                2019.08.18 : ver.5
-!                                2019.08.20 : ver.6
-!                                2019.08.21 : ver.7
-!                                2019.08.29 : ver.8
-!                                2019.08.30 : ver.9
-!===========================================================
 module constants
    use,intrinsic :: iso_fortran_env
    implicit none
@@ -89,7 +79,7 @@ module fft_mkl
 
       print *,'fft_initialize) imax   =',imax
       print *,'fft_initialize) jmax   =',jmax
-#ifdef debug
+!#ifdef debug
       do i=1,12
          if(dftistatus(i).ne.0) then
             print *,'fft_initialize) dft setting error:',i,dftistatus(i)
@@ -97,7 +87,7 @@ module fft_mkl
          end if
       end do
       print *,'fft_initialize) dft settings are completed'
-#endif
+!#endif
 
       return
    end subroutine fft_initialize
@@ -112,7 +102,7 @@ module fft_mkl
       dftistatus(1)=DftiFreeDescriptor(Des_r2c)
       dftistatus(2)=DftiFreeDescriptor(Des_c2r)
 
-#ifdef debug
+!#ifdef debug
       do i=1,2
          if(dftistatus(i).ne.0) then
             print *,'fft_finalize) dft finalization error:',i
@@ -120,7 +110,7 @@ module fft_mkl
          end if
       end do
       print *,'fft_finalize) dft finalization is completed'
-#endif
+!#endif
       return
    end subroutine fft_finalize
 !-----------------------------------------------------------
@@ -338,7 +328,7 @@ module flowfield
          end do
       end do
 !$omp end parallel do
-!$omp parallel do shared(aij),private(i,j,j1,jmjm,i2)
+!$omp parallel do shared(aij,workc),private(i,j,j1,jmjm,i2)
       do j=jmax/2,jmax-1
          j1 = j+1
          jmjm = j-jmax
