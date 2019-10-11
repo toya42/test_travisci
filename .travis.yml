@@ -1,5 +1,5 @@
 dist: bionic
-language: Fortran
+#language: Fortran
 sudo: required
 addons:
    apt:
