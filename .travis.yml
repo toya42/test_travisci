@@ -1,3 +1,4 @@
+dist: bionic
 language: Fortran
 sudo: required
 addons:
