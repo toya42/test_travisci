@@ -4,8 +4,9 @@ os:
    - linux
 
 matrix:
-   - dist: xenial
-   - dist: bionic
+   include: 
+      - dist: xenial
+      - dist: bionic
 sudo: required
 addons:
    apt:
