@@ -1,5 +1,11 @@
-dist: bionic
-#language: Fortran
+#dist: bionic
+##language: Fortran
+os:
+   - linux
+
+matrix:
+   - dist: xenial
+   - dist: bionic
 sudo: required
 addons:
    apt:
