@@ -6,7 +6,7 @@
 
 * Boundary condition
 
-  Doubly-eriodic
+  Doubly-periodic
 
 * Spacial discretization 
 
