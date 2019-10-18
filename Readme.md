@@ -18,7 +18,7 @@
 
   linear term: Integrating factor technique
 
-## Dependeicy
+## Dependency
 
 Fortran2008 (gfortran or ifort)
 
